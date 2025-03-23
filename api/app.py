@@ -5,8 +5,8 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the model and label encoder
-model = joblib.load("weather_model.pkl")
-le = joblib.load("label_encoder.pkl")
+model = joblib.load("../weather_model.pkl")
+le = joblib.load("../label_encoder.pkl")
 
 
 @app.route("/")
